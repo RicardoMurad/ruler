@@ -2,16 +2,15 @@ package com.ruler.models.rules;
 
 import com.ruler.models.Item;
 import com.ruler.models.Rule;
+
 import java.math.BigDecimal;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class AppleTVDiscountRule implements Rule {
 
     private final Integer GROUP_SIZE = 2;
     private final String APPLE_TV_SKU = "atv";
-    private final String APPLE_TV_NAME = "Apple TV";
 
 
     @Override

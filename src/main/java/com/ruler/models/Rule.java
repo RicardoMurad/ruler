@@ -8,6 +8,6 @@ public interface Rule {
 
     boolean isMatch(List<Item> itens);
 
-    public BigDecimal execute(List<Item> itens);
+    BigDecimal execute(List<Item> itens);
 
 }
