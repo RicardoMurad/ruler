@@ -3,6 +3,7 @@ package com.ruler
 import com.ruler.models.Checkout
 import com.ruler.models.Item
 import com.ruler.models.Rule
+import com.ruler.models.rules.AppleTVDiscountRule
 import spock.lang.Specification
 
 class CheckoutTest extends Specification {
@@ -12,6 +13,9 @@ class CheckoutTest extends Specification {
         given: "A user doing checkout"
 
             List<Rule> pricingRules = new ArrayList<>()
+            pricingRules.add(new AppleTVDiscountRule());
+
+
             Checkout co = new Checkout(pricingRules);
 
         when: "He buy 3 apple tvs"
